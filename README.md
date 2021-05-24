@@ -8,9 +8,8 @@ I've got some really great OSS projects pinned here that I'm very proud of.
 
 [fromable](https://github.com/baron816/fromable) gives you a super efficient and ergonomic way of interfacing with iterables (arrays, strings, maps, sets, etc.). It's similar to [transducers](https://medium.com/javascript-scene/transducers-efficient-data-processing-pipelines-in-javascript-7985330fe73d), but requires only a single import, packs its own combining function (so you can output the result into pretty much any type of value), and would be really familiar to anyone who's used `Array.prototype.map` or `Array.prototype.filter`. Getting the indexes and types to be perfect for this was probably the greatest challege here.
 
-[Galactic State](https://github.com/baron816/Galactic-State) provides a simpler way to create "global" state in React. It uses an observer to notify all the components listening to a particular state change to update their state correctly. Has the potental to provide significant performance enhancements vs React's Context API, in addition to a substantially better developer experience.
 
-[Galactic Context](https://github.com/baron816/galactic-context) is similar to Galactic State, but not as global. It still providers an easier and lighterweight API than using React's Context by itself, but it's still using Context underneith the covers, so state does not apply to the whole app process. It uses observers in a similar way as Galactic State, so state updates don't risk causing a rerender of any child components.
+[Galactic Context](https://github.com/baron816/galactic-context) provides a simplier API for creating "global" state in React apps. It cleans up a lot of boilerplate, ensures your provider never rerenders, and makes so that you don't have to worry about different providers depending on each other.
 
 [Tagged-Table](https://github.com/evernote/Tagged-Table) has the ugliest code of the bunch, but it can make your code much prettier where it's used. It turns table data in your code into arrays of objects--essentially allowing you to make your code look like a spreadsheet by having columns of like values.
 
